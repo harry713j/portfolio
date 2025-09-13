@@ -8,7 +8,11 @@ export function ThemeSwitcher() {
 
   return (
     <button onClick={toggleTheme}>
-      {theme === "light" ? <SunIcon /> : <MoonIcon className="text-white" />}
+      {theme === "light" ? (
+        <SunIcon className="text-orange-400" />
+      ) : (
+        <MoonIcon className="text-white" />
+      )}
     </button>
   );
 }

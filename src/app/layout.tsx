@@ -1,15 +1,25 @@
 import type { Metadata } from "next";
-import { Geist_Mono } from "next/font/google";
+import { Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
+import "@radix-ui/themes/styles.css";
 import { ThemeProvider } from "@/context/ThemeContext";
+import { Theme } from "@radix-ui/themes";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  weight: ["600", "700"],
 });
 
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500"],
+});
+
+// TODO: modify for better SEO
 export const metadata: Metadata = {
-  title: "Harihara",
+  title: "harihara",
   description: "",
 };
 
@@ -22,9 +32,9 @@ export default function RootLayout({
     <html lang="en">
       <ThemeProvider>
         <body
-          className={`${geistMono.variable} antialiased bg-white dark:bg-gray-800`}
+          className={`${geistMono.variable} ${poppins.variable} antialiased bg-white dark:bg-gray-800`}
         >
-          {children}
+          <Theme>{children}</Theme>
         </body>
       </ThemeProvider>
     </html>
