@@ -1,0 +1,18 @@
+export const skills: string[] = [
+  "Golang",
+  "JavaScript",
+  "TypeScript",
+  "Java",
+  "NodeJS",
+  "ExpressJS",
+  "ReactJS",
+  "NextJS",
+  "MySQL",
+  "PostgreSQL",
+  "MongoDB",
+  "Git",
+  "Linux",
+  "Cloud",
+  "TailwindCSS",
+  "Networking",
+];
