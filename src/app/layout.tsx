@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist_Mono, Poppins } from "next/font/google";
+import { Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
 import { ThemeProvider } from "@/context/ThemeContext";
@@ -11,7 +11,7 @@ const geistMono = Geist_Mono({
   weight: ["600", "700"],
 });
 
-const poppins = Poppins({
+const inter = Inter({
   variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500"],
@@ -32,7 +32,7 @@ export default function RootLayout({
     <html lang="en">
       <ThemeProvider>
         <body
-          className={`${geistMono.variable} ${poppins.variable} antialiased bg-white dark:bg-gray-800`}
+          className={`${geistMono.variable} ${inter.variable} antialiased bg-white dark:bg-gray-800`}
         >
           <Theme>{children}</Theme>
         </body>

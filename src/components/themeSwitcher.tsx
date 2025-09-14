@@ -2,17 +2,24 @@
 
 import { useTheme } from "@/context/ThemeContext";
 import { SunIcon, MoonIcon } from "@radix-ui/react-icons";
+import { Switch } from "@radix-ui/themes";
 
 export function ThemeSwitcher() {
-  const { theme, toggleTheme } = useTheme();
+  const { toggleTheme } = useTheme();
 
   return (
-    <button onClick={toggleTheme}>
-      {theme === "light" ? (
-        <SunIcon className="text-orange-400" />
-      ) : (
-        <MoonIcon className="text-white" />
-      )}
-    </button>
+    <div className="flex items-center gap-2 ">
+      <SunIcon className="w-5 h-5" />
+      <Switch
+        size={{ initial: "3" }}
+        color="gray"
+        variant="soft"
+        onClick={toggleTheme}
+        style={{
+          cursor: "pointer",
+        }}
+      />
+      <MoonIcon className="w-5 h-5" />
+    </div>
   );
 }
