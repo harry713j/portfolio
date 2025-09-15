@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Geist_Mono, Inter } from "next/font/google";
+import { Geist_Mono, Inter, Fira_Mono } from "next/font/google";
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { Theme } from "@radix-ui/themes";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const firaMono = Fira_Mono({
+  variable: "--font-fira-mono",
   subsets: ["latin"],
-  weight: ["600", "700"],
+  weight: ["500", "700"],
 });
 
 const inter = Inter({
@@ -32,7 +32,7 @@ export default function RootLayout({
     <html lang="en">
       <ThemeProvider>
         <body
-          className={`${geistMono.variable} ${inter.variable} antialiased bg-white dark:bg-gray-800`}
+          className={`${firaMono.variable} ${inter.variable} antialiased bg-white dark:bg-gray-800`}
         >
           <Theme>{children}</Theme>
         </body>

@@ -5,7 +5,7 @@ import { SunIcon, MoonIcon } from "@radix-ui/react-icons";
 import { Switch } from "@radix-ui/themes";
 
 export function ThemeSwitcher() {
-  const { toggleTheme } = useTheme();
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <div className="flex items-center gap-2 ">
@@ -15,6 +15,7 @@ export function ThemeSwitcher() {
         color="gray"
         variant="soft"
         onClick={toggleTheme}
+        defaultChecked={theme === "dark"}
         style={{
           cursor: "pointer",
         }}

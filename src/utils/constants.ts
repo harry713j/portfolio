@@ -16,3 +16,40 @@ export const skills: string[] = [
   "TailwindCSS",
   "Networking",
 ];
+
+export const projects: Project[] = [
+  {
+    name: "MinURLy",
+    description:
+      "A minimal URL shortner, which generate a short url for a big and long url, It has user authentication via OAuth2 google, user can store as much urls as they ",
+    code: "https://github.com/harry713j/minurly",
+    src: "",
+    url: "",
+    techStack: [
+      "Golang",
+      "GorillaMux",
+      "OAuth2",
+      "MongoDB",
+      "ReactJS",
+      "TypeScript",
+      "HeroUI",
+      "TailwindCSS",
+    ],
+  },
+  {
+    name: "YT2Mp3",
+    description:
+      "A simple Node.js + TypeScript application that converts YouTube videos into MP3 audio files. It uses yt-dlp under the hood to fetch and extract audio, and streams the result directly to the client without storing large intermediate files.",
+    code: "https://github.com/harry713j/yt2mp3",
+    src: "",
+    url: "",
+    techStack: [
+      "NodeJS",
+      "TypeScript",
+      "yt-dlp",
+      "ffmpeg",
+      "ReactJS",
+      "TailwindCSS",
+    ],
+  },
+];
