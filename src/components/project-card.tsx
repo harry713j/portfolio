@@ -31,7 +31,7 @@ export function ProjectCard({ className, project }: ProjectCardProps) {
           <h2 className="text-2xl font-fira-mono font-semibold text-slate-600 dark:text-slate-100">
             {project.name}
           </h2>
-          <p className="text-sm text-slate-600 dark:text-slate-100">
+          <p className="text-sm font-inter text-slate-600 dark:text-slate-100">
             {project.description}
           </p>
         </div>

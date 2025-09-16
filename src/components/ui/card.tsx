@@ -16,10 +16,8 @@ export function Card({ children, className, ...props }: CardProps) {
         "relative flex w-full overflow-hidden rounded-xl p-[1.5px] cursor-pointer",
         className
       )}
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
       whileHover={{ scale: 1.01 }}
-      transition={{ duration: 0.3, ease: "easeOut" }}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
       {...props}
     >
       {/* Animated gradient border */}
@@ -33,7 +31,7 @@ export function Card({ children, className, ...props }: CardProps) {
 
       {/* Inner card body */}
       <motion.div
-        className="relative z-10 w-full rounded-[0.60rem] bg-white dark:bg-slate-900 p-6 shadow-2xl"
+        className="relative z-10 w-full rounded-[0.60rem] bg-white dark:bg-neutral-900 p-6 shadow-2xl"
         whileHover={{
           boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
         }}

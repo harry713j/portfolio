@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Geist_Mono, Inter, Fira_Mono } from "next/font/google";
+import { Inter, Fira_Mono } from "next/font/google";
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
-import { ThemeProvider } from "@/context/ThemeContext";
-import { Theme } from "@radix-ui/themes";
+import { ThemeProvider, useTheme } from "@/context/ThemeContext";
+import { RadixThemeProvider } from "@/components/theme-provider";
 
 const firaMono = Fira_Mono({
   variable: "--font-fira-mono",
@@ -34,7 +34,7 @@ export default function RootLayout({
         <body
           className={`${firaMono.variable} ${inter.variable} antialiased bg-white dark:bg-gray-800`}
         >
-          <Theme>{children}</Theme>
+          <RadixThemeProvider>{children}</RadixThemeProvider>
         </body>
       </ThemeProvider>
     </html>

@@ -20,7 +20,7 @@ export function Header() {
   }, []);
 
   return (
-    <nav className="mb-0 w-full flex items-center">
+    <header className="mb-0 w-full flex items-center">
       <div className="flex items-center gap-4 ml-auto">
         <p className="text-sm text-slate-700 dark:text-slate-200 ">
           {currentDate && currentTime
@@ -29,6 +29,6 @@ export function Header() {
         </p>
         <ThemeSwitcher />
       </div>
-    </nav>
+    </header>
   );
 }

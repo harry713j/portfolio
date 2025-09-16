@@ -1,5 +1,6 @@
 "use client";
 
+import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { HeroSection } from "@/components/hero-section";
 import { Projects } from "@/components/projects";
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroSection />
       <Projects />
       <Skills />
+      <Footer />
     </div>
   );
 }
