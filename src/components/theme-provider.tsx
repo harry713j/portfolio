@@ -10,5 +10,9 @@ export function RadixThemeProvider({
 }) {
   const { theme } = useTheme();
 
-  return <Theme appearance={theme}>{children}</Theme>;
+  return (
+    <Theme accentColor="gray" appearance={theme}>
+      {children}
+    </Theme>
+  );
 }

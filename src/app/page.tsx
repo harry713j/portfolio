@@ -1,4 +1,5 @@
 "use client";
+import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { HeroSection } from "@/components/hero-section";
@@ -13,6 +14,7 @@ export default function Home() {
       <HeroSection />
       <Projects />
       <Skills />
+      <Contact />
       <Footer />
     </Container>
   );

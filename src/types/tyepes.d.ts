@@ -15,3 +15,16 @@ type Project = {
   url?: string; // website link if present
   techStack: Array<string>;
 };
+
+type MailPayloadType = {
+  name: string;
+  email: string;
+  message: string;
+};
+
+/** Backend */
+
+interface APIResponse {
+  success: boolean;
+  message: string;
+}
