@@ -1,19 +1,19 @@
 "use client";
-
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { HeroSection } from "@/components/hero-section";
 import { Projects } from "@/components/projects";
 import { Skills } from "@/components/skills";
+import { Container } from "@/components/ui/container";
 
 export default function Home() {
   return (
-    <div className="relative flex flex-col gap-28 px-[28rem] pb-10 pt-[6rem] min-h-screen">
+    <Container>
       <Header />
       <HeroSection />
       <Projects />
       <Skills />
       <Footer />
-    </div>
+    </Container>
   );
 }

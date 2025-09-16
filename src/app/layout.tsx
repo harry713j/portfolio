@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Fira_Mono } from "next/font/google";
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
-import { ThemeProvider, useTheme } from "@/context/ThemeContext";
+import { ThemeProvider } from "@/context/ThemeContext";
 import { RadixThemeProvider } from "@/components/theme-provider";
 
 const firaMono = Fira_Mono({
@@ -17,10 +17,38 @@ const inter = Inter({
   weight: ["100", "200", "300", "400", "500"],
 });
 
-// TODO: modify for better SEO
 export const metadata: Metadata = {
   title: "harihara",
-  description: "",
+  description:
+    "Harihara Sethi is a Full-stack developer, proficient in making web applications as per need, specialize in server side technologies, checkout his portfolio to know more about him",
+  keywords: [
+    "Harihara",
+    "Harihara Sethi",
+    "Fullstack Developer",
+    "Web Developer",
+    "Backend Developer",
+    "Portfolio",
+    "Software Developer",
+    "Software Engineer",
+    "Golang",
+    "TypeScript",
+    "NodeJS",
+  ],
+  authors: { name: "Harihara Sethi" },
+  openGraph: {
+    title: "Harihara Sethi",
+    description: "",
+    url: "", // portfolio url
+    siteName: "harihara",
+    images: [
+      {
+        url: "", // Image Must be an absolute URL
+        width: 400,
+        height: 200,
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -32,7 +60,7 @@ export default function RootLayout({
     <html lang="en">
       <ThemeProvider>
         <body
-          className={`${firaMono.variable} ${inter.variable} antialiased bg-white dark:bg-gray-800`}
+          className={`${firaMono.variable} ${inter.variable} antialiased bg-white dark:bg-neutral-800`}
         >
           <RadixThemeProvider>{children}</RadixThemeProvider>
         </body>

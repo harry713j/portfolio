@@ -9,7 +9,7 @@ export function ThemeSwitcher() {
 
   return (
     <div className="flex items-center gap-2 ">
-      <SunIcon className="w-5 h-5" />
+      <SunIcon className="w-5 h-5 text-yellow-500 dark:text-yellow-300 " />
       <Switch
         size={{ initial: "3" }}
         color="gray"
@@ -19,7 +19,7 @@ export function ThemeSwitcher() {
           cursor: "pointer",
         }}
       />
-      <MoonIcon className="w-5 h-5" />
+      <MoonIcon className="w-5 h-5 text-gray dark:text-gray-300 " />
     </div>
   );
 }

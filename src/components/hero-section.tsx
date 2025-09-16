@@ -9,8 +9,12 @@ import { Tooltip, IconButton } from "@radix-ui/themes";
 export function HeroSection() {
   return (
     <div className="flex flex-col gap-4 items-start">
-      <h1 className="text-4xl font-fira-mono font-bold text-slate-700 dark:text-slate-200">
-        Hello there 👋, I am Hari.
+      <h1 className="text-4xl font-fira-mono font-bold text-slate-700 dark:text-slate-200 ">
+        Hello there 👋, I am{" "}
+        <span className="underline underline-offset-2 decoration-4 decoration-mint dark:decoration-gray">
+          Hari
+        </span>
+        .
       </h1>
       <p className="text-lg font-poppins font-normal text-slate-600 dark:text-slate-200">
         I&apos;m a fullstack developer who loves bringing ideas to life through
