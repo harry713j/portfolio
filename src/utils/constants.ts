@@ -21,7 +21,7 @@ export const projects: Project[] = [
   {
     name: "MinURLy",
     description:
-      "A minimal URL shortner, which generate a short url for a big and long url, It has user authentication via OAuth2 google, user can store as much urls as they ",
+      "A minimal URL shortner, which generate a short url for a big and long url, It has user authentication via OAuth2 google, user can store as much urls as they can",
     code: "https://github.com/harry713j/minurly",
     src: "",
     url: "",
@@ -55,7 +55,7 @@ export const projects: Project[] = [
   {
     name: "MinURLy",
     description:
-      "A minimal URL shortner, which generate a short url for a big and long url, It has user authentication via OAuth2 google, user can store as much urls as they ",
+      "A minimal URL shortner, which generate a short url for a big and long url, It has user authentication via OAuth2 google, user can store as much urls as they can",
     code: "https://github.com/harry713j/minurly",
     src: "",
     url: "",
@@ -89,7 +89,7 @@ export const projects: Project[] = [
   {
     name: "MinURLy",
     description:
-      "A minimal URL shortner, which generate a short url for a big and long url, It has user authentication via OAuth2 google, user can store as much urls as they ",
+      "A minimal URL shortner, which generate a short url for a big and long url, It has user authentication via OAuth2 google, user can store as much urls as they can",
     code: "https://github.com/harry713j/minurly",
     src: "",
     url: "",

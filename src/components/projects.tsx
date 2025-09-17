@@ -24,7 +24,11 @@ export function Projects() {
     <div className="flex flex-col gap-4">
       <BackgroundHeader>Works</BackgroundHeader>
 
-      <div className="grid grid-cols-2 gap-4">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="grid grid-cols-2 gap-4"
+      >
         <AnimatePresence>
           {cachedProjects.slice(0, noOfVisible).map((project, i) => (
             <motion.div
@@ -39,7 +43,7 @@ export function Projects() {
             </motion.div>
           ))}
         </AnimatePresence>
-      </div>
+      </motion.div>
       {cachedProjects.length > 4 && (
         <div className="">
           <Button

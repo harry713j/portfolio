@@ -55,8 +55,9 @@ export function ProjectCard({ className, project }: ProjectCardProps) {
               size={{ initial: "1" }}
               color="gray"
               style={{
-                cursor: "pointer",
+                cursor: project.url ? "pointer" : "not-allowed",
               }}
+              disabled={!project.url}
             >
               <GlobeIcon /> Website
             </Button>
