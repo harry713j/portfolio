@@ -21,8 +21,8 @@ export function Header() {
 
   return (
     <header className="mb-0 w-full flex items-center">
-      <div className="flex items-center gap-4 ml-auto">
-        <p className="text-sm text-slate-700 dark:text-slate-200 underline underline-offset-2 decoration-2 decoration-mint dark:decoration-gray ">
+      <div className="flex items-center gap-4 sm:ml-auto sm:justify-normal justify-center">
+        <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-200 underline underline-offset-2 decoration-2 decoration-mint dark:decoration-gray ">
           {currentDate && currentTime
             ? `${currentDate} ${currentTime}`
             : "--:-- IST"}

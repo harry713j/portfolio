@@ -10,7 +10,7 @@ export function TextArea({ className, ...props }: TextAreaProps) {
     <RadixTextArea
       className={cn("", className)}
       resize="none"
-      size={{ initial: "3" }}
+      size={{ initial: "2", sm: "3" }}
       color="gray"
       {...props}
     />

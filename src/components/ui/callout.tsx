@@ -10,9 +10,9 @@ interface CalloutProps extends React.ComponentProps<typeof RadixCallout.Root> {
 export function Callout({ className, icon, content, ...props }: CalloutProps) {
   return (
     <RadixCallout.Root
-      className={cn("w-1/2", className)}
+      className={cn("w-fit", className)}
       variant="soft"
-      size={{ initial: "2" }}
+      size={{ initial: "1", sm: "2" }}
       role="alert"
       {...props}
     >

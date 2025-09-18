@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <Container className="flex-row justify-center items-center py-0">
-      <div className="flex flex-col items-center gap-4">
-        <h2 className="text-3xl font-fira-mono font-semibold text-slate-600 opacity-70 dark:text-slate-200 ">
+    <Container className="flex-row justify-center items-center py-0 px-16 lg:px-20 ">
+      <div className="flex flex-col items-center md:gap-4 gap-3">
+        <h2 className="text-2xl md:text-3xl font-fira-mono font-semibold text-slate-600 opacity-70 dark:text-slate-200 ">
           404 <span className="font-thin">|</span> Not Found
         </h2>
-        <p className="text-base font-inter text-slate-600 opacity-50 dark:text-slate-200 ">
+        <p className="text-sm sm:text-base @min-xs:text-center font-inter text-slate-600 opacity-50 dark:text-slate-200 ">
           The page you are looking for is not exists
         </p>
         <Link

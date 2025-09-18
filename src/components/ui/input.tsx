@@ -10,7 +10,7 @@ export function Input({ className, icon, ...props }: InputProps) {
   return (
     <TextField.Root
       className={cn("", className)}
-      size={{ initial: "3" }}
+      size={{ initial: "2", sm: "3" }}
       color="gray"
       {...props}
     >

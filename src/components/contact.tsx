@@ -70,18 +70,18 @@ export function Contact() {
   };
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-3 sm:gap-4">
       <BackgroundHeader>Get In Touch</BackgroundHeader>
-      <div className="flex w-full flex-col items-start gap-4">
-        <p className="text-lg font-medium font-inter text-slate-600 dark:text-slate-200">
+      <div className="flex w-full flex-col items-start gap-3 sm:gap-4">
+        <p className="text-base sm:text-lg font-medium font-inter text-slate-600 dark:text-slate-200">
           Write an email to me.
         </p>
         <form
           onSubmit={onSubmit}
-          className="flex w-full flex-col gap-3 px-10 py-6 bg-[#F7F9FF] dark:bg-neutral-800 rounded-md "
+          className="flex w-full flex-col gap-2 sm:gap-3 px-2 py-1 sm:px-6 sm:py-3 md:px-10 md:py-6 bg-[#F7F9FF] dark:bg-neutral-800 rounded-md "
         >
           <div className="w-full flex flex-col items-start gap-1">
-            <label className="text-base font-inter font-medium text-slate-600 dark:text-slate-200">
+            <label className="text-sm md:text-base font-inter font-medium text-slate-600 dark:text-slate-200">
               Your Name
             </label>
             <Input
@@ -97,7 +97,7 @@ export function Contact() {
           </div>
 
           <div className="w-full flex flex-col items-start gap-1">
-            <label className="text-base font-inter font-medium text-slate-600 dark:text-slate-200">
+            <label className="text-sm md:text-base font-inter font-medium text-slate-600 dark:text-slate-200">
               Your Email
             </label>
             <Input
@@ -113,7 +113,7 @@ export function Contact() {
           </div>
 
           <div className="w-full flex flex-col items-start gap-1">
-            <label className="text-base font-inter font-medium text-slate-600 dark:text-slate-200">
+            <label className="text-sm md:text-base font-inter font-medium text-slate-600 dark:text-slate-200">
               Your Message
             </label>
             <TextArea
@@ -130,7 +130,7 @@ export function Contact() {
           <Button
             type="submit"
             className="w-full flex justify-center mt-2"
-            size={{ initial: "3" }}
+            size={{ initial: "2", sm: "3" }}
             style={{ cursor: "pointer" }}
             highContrast
             disabled={isLoading}

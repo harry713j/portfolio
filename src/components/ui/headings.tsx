@@ -16,7 +16,7 @@ export function BackgroundHeader({
     <div className="relative inline-block w-fit ">
       <h1
         className={cn(
-          "text-3xl z-10 font-fira-mono font-bold text-slate-700 dark:text-slate-200",
+          "text-2xl md:text-3xl z-10 font-fira-mono font-bold text-slate-700 dark:text-slate-200",
           className
         )}
       >

@@ -1,7 +1,7 @@
 export function Footer() {
   return (
     <footer className="flex items-center justify-start">
-      <p className="text-sm font-inter text-slate-600/60 dark:text-slate-100/60 italic">
+      <p className="text-xs md:text-sm font-inter text-slate-600/60 dark:text-slate-100/60 italic">
         Developed By{" "}
         <a
           href="https://github.com/harry713j"
