@@ -21,7 +21,10 @@ export function Projects() {
   };
 
   return (
-    <div className="flex flex-col min-[320px]:gap-3 sm:gap-4">
+    <div
+      id="work"
+      className="flex flex-col min-[320px]:gap-3 sm:gap-4 scroll-mt-24"
+    >
       <BackgroundHeader>Works</BackgroundHeader>
 
       <motion.div

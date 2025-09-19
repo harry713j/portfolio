@@ -13,7 +13,7 @@ export function BackgroundHeader({
   children,
 }: BackgroundHeaderProps) {
   return (
-    <div className="relative inline-block w-fit ">
+    <div id="#hero" className="relative inline-block w-fit ">
       <h1
         className={cn(
           "text-2xl md:text-3xl z-10 font-fira-mono font-bold text-slate-700 dark:text-slate-200",

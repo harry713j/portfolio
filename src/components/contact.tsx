@@ -70,7 +70,7 @@ export function Contact() {
   };
 
   return (
-    <div className="flex flex-col gap-3 sm:gap-4">
+    <div id="contact" className="flex flex-col gap-3 sm:gap-4 scroll-mt-24">
       <BackgroundHeader>Get In Touch</BackgroundHeader>
       <div className="flex w-full flex-col items-start gap-3 sm:gap-4">
         <p className="text-base sm:text-lg font-medium font-inter text-slate-600 dark:text-slate-200">

@@ -8,7 +8,10 @@ import { Tooltip, IconButton } from "@radix-ui/themes";
 
 export function HeroSection() {
   return (
-    <div className="flex flex-col min-[320px]:gap-3 sm:gap-4 items-start">
+    <div
+      id="home"
+      className="flex flex-col min-[320px]:gap-3 sm:gap-4 items-start scroll-mt-24"
+    >
       <h1 className="text-[26px] text-center md:text-left sm:text-[28px] md:text-4xl font-fira-mono font-bold text-slate-700 dark:text-slate-200 ">
         Hello there 👋, I am{" "}
         <span className="underline underline-offset-2 decoration-4 decoration-mint dark:decoration-gray">

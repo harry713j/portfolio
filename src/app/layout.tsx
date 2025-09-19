@@ -38,11 +38,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Harihara Sethi",
     description: "",
-    url: "", // portfolio url
+    url: "https://harihara-one.vercel.app/", // portfolio url
     siteName: "harihara",
     images: [
       {
-        url: "", // Image Must be an absolute URL
+        url: "https://res.cloudinary.com/harry-cloud-13/image/upload/e_improve,e_sharpen/v1758189394/wp9110449-linus-torvalds-wallpapers_fslzzm.jpg", // Image Must be an absolute URL
         width: 400,
         height: 200,
       },

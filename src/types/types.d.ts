@@ -16,6 +16,11 @@ type Project = {
   techStack: Array<string>;
 };
 
+type Skill = {
+  category: "language" | "framework" | "database" | "others";
+  name: string;
+};
+
 type MailPayloadType = {
   name: string;
   email: string;
