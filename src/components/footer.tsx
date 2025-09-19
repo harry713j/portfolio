@@ -20,7 +20,7 @@ export function Footer() {
 
   return (
     <footer className="flex items-center justify-between">
-      <p className="text-xs md:text-sm font-inter text-slate-600/60 dark:text-slate-100/60 italic">
+      <p className="min-[320px]:text-[8px] min-[380px]:text-2xs text-xs md:text-sm font-inter text-slate-600/60 dark:text-slate-100/60 italic">
         Developed By{" "}
         <a
           href="https://github.com/harry713j"
@@ -30,7 +30,7 @@ export function Footer() {
           Harihara Sethi
         </a>
       </p>
-      <p className="font-inter italic text-xs md:text-sm text-slate-700/80 dark:text-slate-200 underline underline-offset-2 decoration-2 decoration-mint dark:decoration-gray ">
+      <p className="font-inter italic min-[320px]:text-[8px] min-[380px]:text-2xs text-xs md:text-sm text-slate-700/80 dark:text-slate-200 underline underline-offset-2 decoration-2 decoration-mint dark:decoration-gray ">
         {currentDate && currentTime
           ? `${currentDate} ${currentTime}`
           : "--:-- IST"}
