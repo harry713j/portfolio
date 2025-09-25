@@ -19,7 +19,7 @@ export function HeroSection() {
         </span>
         .
       </h1>
-      <p className="text-base sm:text-[17px] text-pretty md:text-lg font-poppins font-normal text-slate-600 dark:text-slate-200">
+      <p className="sm:text-base text-sm text-pretty md:text-lg font-poppins font-normal text-slate-600 dark:text-slate-200">
         I&apos;m a fullstack developer who loves bringing ideas to life through
         code. While I enjoy working across the stack, my real passion lies in
         backend development, building APIs, handling real-time communication,
